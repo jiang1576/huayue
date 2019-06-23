@@ -1,0 +1,151 @@
+<div class="body" style="margin-top:8%">
+    <section class="section_project_wrapper">
+        <section class="section_project_form">
+            </br>
+            </br>
+            </br>
+            <p><span class="titlespan">填写基本信息</span></p>
+            <p><span class="stitlespan">填写基本信息，让合适的画师快速找到您！</span></p>
+            </br>
+            </br>
+
+            <form enctype="multipart/form-data" autocomplete="off" name="qhfom" class="form_hy" >
+            <!--<form method="post"-->
+                  <!--action="http://localhost:3000/fabu"-->
+                  <!--target="" enctype="multipart/form-data">-->
+                <section class="section_form_wrapper">
+                    <section class="section_form_wrapper_lable">您准备把这张稿件用作?</section>
+
+                    <section class="section_form_wrapper_radio">
+                        <label class="form_radio_use"><input  name="tp" type="radio" value="头像" />头像 </label>
+                        <label class="form_radio_use"><input name="tp" type="radio" value="壁纸" />壁纸 </label>
+                        <label class="form_radio_use"><input name="tp" type="radio" value="自设" />自设 </label>
+                        <label class="form_radio_use"><input name="tp" type="radio" value="其他" />其它 </label>
+                    </section>
+                    <!-- <div>
+                        <label role="radio" class="form_radio">
+                            <span class="form_radio_input">
+                                <span class="form_radio_inner"></span>
+                                <input type="radio" />
+                            </span>
+                            <span>其他</span>
+                        </label>
+                    </div> -->
+                </section>
+                <section class="section_form_wrapper">
+                    <section class="section_form_wrapper_lable">稿件的风格要求：</section>
+                    <section class="section_form_wrapper_radio">
+                        <label class="form_radio_use"><input  name="fg" type="radio" value="有风格" />有风格要求 </label>
+                        <label class="form_radio_use"><input  name="fg" type="radio" value="无风格" />无风格要求 </label>
+
+                    </section>
+                </section>
+                <section class="section_form_wrapper">
+                    <section class="section_form_wrapper_lable">稿件颜色模式:</section>
+                    <section class="section_form_wrapper_radio">
+                        <label class="form_radio_use"><input  name="color" type="radio" value="RGB" />RGB模式
+                            <span style="color: darkgrey;">(用于网络传播)</span></label>
+                        <label class="form_radio_use"><input name="color" type="radio" value="CMYK" />CMYK模式
+                            <span style="color: darkgrey;">(用于印刷品)</span></label>
+                    </section>
+                </section>
+                <section class="section_form_wrapper">
+                    <section class="section_form_wrapper_lable">您希望如何称呼您的稿件?</section>
+                    <div>
+                        <input type="text" class="form_text_title"  name="gjname" id="gjname" value=""
+                               oninput="messagetime()"  onclick="messagetime()">
+                        <div  id="divdate" style="display:none" class="divreminder">
+                            请输入您稿件名称
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section_form_wrapper">
+                    <section class="section_form_wrapper_lable">您希望稿件的规格?</section>
+                    <section><input type="text" name="gjsize" id="size"
+                                    class="form_text_title" list="itemlist2" onclick="messagetime4()" oninput="messagetime4()"/>
+                        <div  id="divsize" style="display:none;" class="divreminder" >
+                            请设置您稿件规格
+                        </div>
+                        <datalist id="itemlist2">
+                            <option > 100x100 </option>
+                            <option > 800x600 </option>
+                            <option > 1920x1080 </option>
+
+                        </datalist>
+                    </section>
+                </section>
+                <section class="section_form_wrapper">
+                    <section class="section_form_wrapper_lable">您希望稿件的截止日期?</section>
+
+                    <div >
+                        <input type="text" id="time" placeholder="单击选择时间" onClick="messagetime2();return Calendar('time');" class="form_text_title" oninput="messagetime2()"/>
+                        <div  id="divtime" style="display:none;" class="divreminder" >
+                            请选择您截稿日期
+                        </div>
+                    </div>
+
+                </section>
+                <section class="section_form_wrapper">
+                    <section class="section_form_wrapper_lable">您希望画师报价在什么范围内?</section>
+                    <section><input type="text" name="money" id="price"
+                                   class="form_text_title" list="itemlist" oninput="messagetime3()" onclick="messagetime3()"/>
+                        <div  id="divprice" style="display:none;" class="divreminder" >
+                            请设置您稿件价格
+                        </div>
+                        <datalist id="itemlist">
+                            <option value="100-400"> 元/张（非商用或无质量要求）</option>
+                            <option value="400-800"> 元/张（仅对作品有简单要求）</option>
+                            <option value="800-1500"> 元/张（作品质量有明确要求）</option>
+                            <option value="1500-4000"> 元/张（精度质量有严格要求）</option>
+                            <option value="4000-8000"> 元/张（极高精度、质量要求）</option>
+                        </datalist>
+                    </section>
+                </section>
+                <section class="section_form_wrapper">
+                    <section class="section_form_wrapper_lable">需求描述</section>
+                    <section style="position: relative">
+                        <section> <textarea autocomplete="off" name="jj" id="jj1" placeholder="例：想要一个日系可爱女孩子抱着猫的头像" maxlength="1000" rows="3"
+                                            class="form_textarea" style="min-height: 54px; height: 200px;"onclick="messagetime5()" oninput="messagetime5()"></textarea>
+                        </section>
+
+                        <div  id="divjj" style="display:none; margin-top: 10px;width: 125px" class="divreminder"  >
+                            需求描述不能少于10字
+                        </div>
+
+                        <span class="count" id="countspan" style="display: none"><span id="textcount">0</span>/1000</span>
+                    </section>
+                </section>
+                </br>
+                </br>
+                </br>
+                <section >
+                    <input type="button" class="hy_button_submit"  id="btnFB" value="完成">
+                    </input>
+                </section>
+
+            </form>
+
+            </br>
+            </br>
+            </br>
+            </br>
+            </br>
+            </br>
+        </section>
+
+    </section>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+</div>

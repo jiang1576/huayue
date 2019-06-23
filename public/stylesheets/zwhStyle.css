@@ -1,0 +1,247 @@
+body{
+    width: 100%;
+    margin: 0;
+    background-color: #e6eaee;
+}
+/*——————首页——————*/
+/*导航栏*/
+.navBar{
+    height:70px;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding: 0 50px;
+    position: fixed;
+    box-shadow: 0 4px 4px rgba(0,0,0,.3);
+    background-color: #222;
+    z-index: 50;
+}
+div.navBar ul{
+    margin: 0 auto;
+    list-style: none;
+    line-height: 70px;
+    float: left;
+}
+.navBar ul li{
+    margin: 0 10px;
+    float: left;
+}
+.navBar ul li a, .navBar ul li a:visited{
+    cursor: pointer;
+    display: block;
+    color: #d8d8d8;
+    font-size: 16px;
+    padding: 0 20px;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+.navBar ul li a:hover{
+    color: #fff;
+    transition-duration: 0.5s;
+}
+.navBar .right {
+    margin: 0 10px;
+    float: right;
+}
+.navBar ul .register a button{
+    color: white;
+    width: 80px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+    border-color: #00a8e9;
+    background-color: #00a8e9;
+}
+
+/*banner区域*/
+.banner{
+    top: 70px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.banner img{
+    display: block;
+    width: 100%;
+}
+.banner h1{
+    position: absolute;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    top: 20%;
+    font-size: 34px;
+    font-weight: 500;
+    text-shadow: 2px 2px 4px rgba(0,0,0,.5);
+    letter-spacing: 5px;
+    line-height: 1.8;
+    color: white;
+    text-align: center;
+}
+.banner p{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 30%;
+    font-size: 18px;
+    font-weight: 300;
+    text-shadow: 2px 2px 4px rgba(0,0,0,.95);
+    line-height: 1.8;
+    color: white;
+    text-align: center;
+}
+.banner div{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    text-align: center;
+}
+.banner button{
+    cursor: pointer;
+    color: #fff;
+    background-color: rgba(38,40,46,.2);
+    border:solid 1px #fff;
+    margin: 0 50px;
+    font-size: 20px;
+    padding: 20px 80px;
+    border-radius: 37px;
+    outline: none;
+}
+.banner button:hover{
+    background-color: rgba(255,255,255,.2);
+    transition-duration: 0.5s;
+}
+
+/*——————企划展示页面——————*/
+.container{
+    width: 1200px;
+    margin: 40px auto 100px;
+}
+.leftList{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 18%;
+    float: left;
+    flex-direction: column;
+    border-radius: 4px;
+    display: flex;
+    background-color: white;
+}
+.leftList section{
+    padding: 20px 10px;
+}
+.leftList section h4{
+    color: #4a4a4a;
+    font-size: 14px;
+    margin: 0;
+    font-weight: 700;
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+}
+.content div{
+    font-size: 12px;
+    margin-top: 15px;
+    margin-right: 15px;
+    cursor: pointer;
+    color: #4a4a4a;
+    transition: .5s;
+}
+.content div:hover, #isActive{
+    color: #00a8e9;
+}
+/*下拉框*/
+.menu{
+    border: solid 1px #dcdfe6;
+    border-radius:5px;
+    color:#606266;
+    display:block;
+    margin-top: 15px;
+    padding-left: 15px;
+    position: relative;
+    font-size: 14px;
+    height: 30px;
+    width: 170px;
+    line-height: 30px;
+}
+.menu:hover{
+    cursor: pointer;
+}
+.menu option{
+    padding-top: 5px;
+}
+
+.rightList{
+    width: 75%;
+    float: left;
+    margin-left: 12px;
+    height: 300px;
+
+}
+.project{
+    width: 45%;
+    padding: 0 12px;
+    float: left;
+    display: none;
+}
+.project section{
+    display: flex;
+    flex: 1;
+    margin-bottom: 24px;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 4px;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,.08);
+}
+.project a{
+    cursor: pointer;
+    text-decoration: none;
+}
+.project-header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.project-header h5{
+    display: flex;
+    align-items: center;
+    width: 65%;
+    font-size: 16px;
+    margin: 0;
+    line-height: 25px;
+    color: #4a4a4a;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.project-header div{
+    flex: none;
+    font-size: 18px;
+    color: #f6a11e;
+}
+.project-header span{
+    color: #9b9b9b;
+    font-size: 12px;
+}
+.project-time{
+    margin-bottom: 20px;
+    font-size: 12px;
+    color: silver;
+}
+.project-value{
+    display: flex;
+    justify-content: space-between;
+}
+.project-value-title{
+    font-size: 12px;
+    color: #9b9b9b;
+}
+.project-value-value{
+    font-size: 14px;
+    color: #666;
+}

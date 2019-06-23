@@ -1,0 +1,290 @@
+.body{
+    padding: 0;
+    margin: 0;
+    position: relative;
+    background-color:#e6eaee;
+
+}
+
+
+.section_project_wrapper
+{
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .2);
+    border-radius: 8px;
+    width: 1000px;
+    margin: 0 auto;
+    background-color: white;
+
+}
+.section_project_form
+{
+
+    margin:0 auto;
+    height: 100%;
+    padding: 0;
+    width: 86%;
+    background-color: white;
+}
+.form_hy
+{
+    margin:0 auto;
+
+    width: 61%;
+
+
+}
+/*.section_form_wrapper*/
+/*{*/
+    /*width: 100%;*/
+
+    /*position: relative;*/
+    /*margin: 0;*/
+    /*padding:  25px 0 25px 0;*/
+
+    /*background-color: white;*/
+/*}*/
+
+.section_form_wrapper
+{
+    width: 100%;
+
+    position: relative;
+    margin:25px 0 0px 0;
+    padding:  0px 0 25px 0 ;
+
+    background-color: white;
+}
+
+.section_form_wrapper_lable
+{
+    width: 100%;
+    margin: 0;
+    height: 50px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+    font-size: 16px;
+    color: #9b9b9b;
+
+}
+.section_form_wrapper_radio
+{
+    padding-top: 20px;
+    margin: 0;
+
+}
+.form_text_title
+{
+    width: 100%;
+    background-color: #fff;
+    background-image: none;
+    border-radius: 4px;
+    border: 1px solid #dcdfe6;
+    box-sizing: border-box;
+    color: #606266;
+    display: inline-block;
+    /* font-size: inherit; */
+    height: 40px;
+    font-size: 14px;
+    font-family: "微软雅黑";
+    line-height: 40px;
+    outline: none;
+    padding: 0 15px 0 15px;
+    position: relative;
+}
+.titlespan
+{
+    font-size: 24px;
+    color: #666;
+    font-weight: 400;
+
+}
+.stitlespan
+{
+    font-size: 14px;
+    color: gray;
+    font-weight: 400;
+    color: #9b9b9b;
+}
+.form_radio_inner
+{
+    border: 1px solid #dcdfe6;
+    border-radius: 100%;
+    width: 14px;
+    height: 14px;
+    background-color: #fff;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    box-sizing: border-box;
+}
+.form_radio_input
+{
+    white-space: nowrap;
+    cursor: pointer;
+    outline: none;
+    display: inline-block;
+    line-height: 1;
+    position: relative;
+    vertical-align: middle;
+}
+.form-radio
+{
+    color: #606266;
+    font-weight: 500;
+    line-height: 1;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    white-space: nowrap;
+    outline: none;
+    font-size: 14px;
+
+
+
+}
+.form_radio
+{
+    width: 100px;
+    color: #606266;
+    font-weight: 500;
+    line-height: 1;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    white-space: nowrap;
+    outline: none;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid #dcdfe6;
+    box-sizing: border-box;
+    height: 40px;
+    color: #606266;
+    text-align: center;
+
+    /*  font-weight: 500;
+      line-height: 1;
+      position: relative;
+      cursor: pointer;
+      display: inline-block;
+      white-space: nowrap;
+      outline: none;
+      font-size: 14px; */
+}
+
+.form_textarea
+{
+
+    display: block;
+    resize: vertical;
+    padding: 5px 15px;
+    line-height: 1.5;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 14px;
+    color: #606266;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid ;
+    border-color: #dcdfe6;
+    border-radius: 4px;
+}
+input:focus, textarea:focus
+{
+ outline: none;
+}
+.hy_button_submit
+{
+
+
+    color: #fff;
+    background-color: #00a8e9;
+    border-color: #00a8e9;
+    line-height: 1;
+    white-space: nowrap;
+    cursor: pointer;
+    text-align: center;
+    outline: none;
+    margin: 0;
+    border: none;
+    border-radius: 8px;
+    padding: 18px 43px;
+    font-size: 14px;
+    position: absolute;
+    right: 320px;
+}
+
+.hy_button_submit:hover{
+    color:white;
+    display: block; background-color:rgba(172,205,230,0.8);
+}
+.zc
+
+.div_data1
+{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 40px;
+
+}
+.div_data2
+{
+    position: absolute;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+}
+.div_data3
+{
+    position: absolute;
+    top: 8px;
+    margin: 0;
+    left: 4px;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+
+
+}
+.form_radio_use
+{
+    width: 200px;
+    margin: 0 ;
+    padding-right: 75px;
+    font-size: 14px;
+    color:#606266;
+    font-weight: 400;
+}
+
+.divreminder
+{
+    font-size: 12px;
+    background: #f56c6c;
+    color: #fff;
+    padding: 5px;
+    border-radius: 4px;
+    width: 100px;
+    position: absolute;
+    top:100%;
+    margin-top: -15px;
+}
+.count
+{
+    font-size: 12px;
+    padding: 5px;
+    color: black;
+    position: absolute;
+    top:110%;
+    margin-top: -15px;
+    right: 0;
+}
+.text_time {
+    width: 207px;
+    height: 35px;
+    background: #ffffff;
+    border: 1px solid #56da9e;
+}
